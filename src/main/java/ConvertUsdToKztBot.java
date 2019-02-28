@@ -51,7 +51,6 @@ public class ConvertUsdToKztBot extends TelegramLongPollingBot {
         SendMessage sendMessage = new SendMessage();
         sendMessage.enableMarkdown(true);
         sendMessage.setChatId(msg.getChatId());
-        //sendMessage.setReplyToMessageId(msg.getMessageId());
         sendMessage.setText(text);
         try {
             execute(sendMessage);
